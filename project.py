@@ -36,8 +36,7 @@ app_mode = st.sidebar.selectbox("Select Page", ["Fraud App Detection", "Home", "
 # Main Page
 if app_mode == "Home":
     st.header("FRAUD APP DETECTION USING SENTIMENT ANALYSIS")
-    image_path = "frontend/homepage.jpg"
-    st.image(image_path, use_column_width=True)
+    
     st.markdown("""
     Welcome to the Fraud App Detection System! 🔍🛡️
     
@@ -101,3 +100,4 @@ elif app_mode == "Fraud App Detection":
                 st.success(f"Analysis suggests it's **{result[0]}**\n\n{result[1]}")
             except Exception as e:
                 st.success("Invalid Link!")
+
